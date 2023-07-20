@@ -236,6 +236,9 @@ footer{
     opacity: 50%;
     transition: .5s ease-in-out;
 }
+.copy{
+    padding-bottom: 15px;
+}
 
 /* responsive design */
 /* small device */
@@ -313,5 +316,15 @@ footer{
         place-items: center;
     }
     /* footer */
-   
+   footer{
+    padding: 5px 10px;
+   }
+   .footer-options, .logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+   }
+   .footer-secondary-options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
 }
