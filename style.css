@@ -7,6 +7,38 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+.primary{
+    background-color: #FF42A5;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .5s ease-in-out;
+}
+.primary:hover{
+    background-color: transparent;
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    transition: .5s ease-in-out;
+}
+.secondary{
+    background-color: #4EC5F7;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .5s ease-in-out;
+}
+.secondary:hover{
+    transition: .5s ease-in-out;
+    border: 1px solid #4EC5F7;
+    color: #4EC5F7;
+    background-color: transparent;
+}
 
 /* navbar */
 nav{
@@ -60,17 +92,116 @@ nav .options{
     padding: 5px 10px;
 }
 
+/* main section */
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px ;
+}
+.banner img{
+    height: 500px;
+}
+.banner h3{
+    font-size: 3rem;
+}
+.gradient{
+    font-size: 4rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner p{
+    color: #424242;
+    margin-bottom: 5px;
+}
+.banner button{
+    margin-top: 15px;
+}
 
+/* online games section */
 
+.online{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.online-contents h2{
+    font-size: 4rem;
+}
+.online p{
+    color: #424242;
+    text-align: center;
+    margin: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    height: 350px;
+    transition: .5s ease-in-out;
+}
+.card img:hover{
+    transition: .5s ease-in-out;
+    opacity: 75%;
 
-
+}
+.online-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 30px 75px;
+}
 /* responsive design */
 /* small device */
 @media screen and (max-width: 576px) {
+        /* shared styles */
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+}
+
+    /* navbar */
     nav, .options{
         flex-direction: column;
         padding: 10px 20px;
         justify-content: center;
         align-items: center;
     }
+
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .banner img{
+        margin-bottom: 50px;
+        width: 350px;
+        height: auto;
+    }
+
+    /* online games */
+    .online{
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .online-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
