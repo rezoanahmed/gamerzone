@@ -189,13 +189,14 @@ nav .options{
 .buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    place-items: center;
 }
 .button{
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    
     border: 2px solid transparent;
     border-radius: 50px;
     transition: .5s ease-in-out;
@@ -296,6 +297,8 @@ footer{
     .play-content{
         margin: 5px auto;
         padding: 10px 20px;
+        width: 90%;
+
     }
     .play img{
         height: 300px;
