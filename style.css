@@ -39,7 +39,10 @@
     color: #4EC5F7;
     background-color: transparent;
 }
-
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* navbar */
 nav{
     padding: 20px 200px;
@@ -107,7 +110,7 @@ nav .options{
     font-size: 3rem;
 }
 .gradient{
-    font-size: 4rem;
+    font-size: 3rem;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -131,7 +134,7 @@ nav .options{
     align-items: center;
 }
 .online-contents h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .online p{
     color: #424242;
@@ -157,6 +160,28 @@ nav .options{
     gap: 30px;
     margin: 30px 75px;
 }
+
+/* play section */
+.play{
+    display: flex;
+    padding: 40px 100px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.play img{
+    height: 400px;
+}
+#imageover{
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 300px;
+}
+.play h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
 /* responsive design */
 /* small device */
 @media screen and (max-width: 576px) {
@@ -203,5 +228,26 @@ nav .options{
     .online-cards{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    /* play section */
+    .play{
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+    }
+    .play-content{
+        margin: 5px auto;
+        padding: 10px 20px;
+    }
+    .play img{
+        height: 300px;
+        padding: 10px 20px;
+    }
+    #imageover{
+        padding: 10px 20px;
+        height: 150px;
+        margin-bottom: -50px;
+        margin-left: 250px;
+        position: relative;
+    }
+
+    /* buttons section */
 }
