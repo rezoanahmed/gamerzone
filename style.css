@@ -7,6 +7,15 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 20px;
+    margin-right: 5px;
+}
 .primary{
     background-color: #FF42A5;
     padding: 10px 20px;
@@ -39,6 +48,7 @@
     color: #4EC5F7;
     background-color: transparent;
 }
+
 main{
     max-width: 1440px;
     margin: 0 auto;
@@ -52,15 +62,7 @@ nav{
     top: 0;
     position: sticky;
 }
-nav .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    height: 20px;
-    margin-right: 5px;
-}
+
 nav .options{
     display: flex;
     justify-content: center;
@@ -182,6 +184,59 @@ nav .options{
     margin-bottom: 10px;
 }
 
+/* button section */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+    margin: 10px;
+}
+.button:hover{
+    border: 2px solid #FF42A5;
+}
+.button img{
+    height: 40px;
+}
+.button p{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* footer */
+footer{
+    background-color: #0B0223;
+    color: white;
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logos{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.logos img{
+    height: 40px;
+    transition: .5s ease-in-out;
+}
+.logos img:hover{
+    opacity: 50%;
+    transition: .5s ease-in-out;
+}
+
 /* responsive design */
 /* small device */
 @media screen and (max-width: 576px) {
@@ -202,6 +257,7 @@ nav .options{
         padding: 10px 20px;
         justify-content: center;
         align-items: center;
+
     }
 
     /* banner */
@@ -250,4 +306,12 @@ nav .options{
     }
 
     /* buttons section */
+    .buttons{
+        padding: 10px 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    /* footer */
+   
 }
